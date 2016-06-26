@@ -1,0 +1,9 @@
+class Service:
+    def getFolders(self):
+        return ["folder1",'folder2','folder3']
+    def beginCleanup(self,folderNumber):
+        return True
+    def getResults(self):
+        return["something","something else"]
+    def login(self):
+        return True
