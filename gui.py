@@ -1,11 +1,26 @@
 import os
+from service import Service
 
-print "Choose one..."
+s = Service()
+
+fileList = []
+
+results = []
+
+counter = 1
+
+fileList = s.getFolders()
+
+for name in fileList:
+    print str(counter) + ") " + name
+    counter += 1
+
+print "Choose a folder..."
 input = raw_input()
 
-if input == "1":
-    print "You chose 1"
-elif input == "2":
-    print "You chose 2"
-else:
-    print input
+print "Cleaning folder..."
+s.beginCleanup(input)
+
+results = s.getResults()
+for a in results:
+    print a
