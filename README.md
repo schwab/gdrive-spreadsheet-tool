@@ -19,3 +19,10 @@ A folder containing google spreadsheet files, with a list of company information
     * Total number of emails per file and in all folder
     * Total number of rows per file and in all folder
  
+ ### Setup
+ ```
+ sudo pip install --upgrade google-api-python-client
+ sudo pip install httplib2
+
+ python gui.py
+ ```
